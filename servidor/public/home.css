@@ -1,0 +1,29 @@
+body {
+    background-color: bisque;
+}
+.site-todo{
+    padding: 0.5;
+    font-family: arial;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+label{
+    margin-right: 5px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet">
+    <title>Prova Calebe</title>
+</head>
+<body>
+    <div class="site-todo">
+        <div class="texto">
+            <h1>Alunos</h1>
+        </div>
+        <div class="imagem">
+            <img class="img1" src="img1.png">
+        </div>
+        <form method = "post" action="/cadastro" class="form-container">
+            <div class="forms">
+                <label for="Aluno">Aluno:</label>
+                <input type="text" name="aluno">
+            </div>
+            <div class="forms">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" name="nota1">
+            </div>
+            <div class="forms">
+                <label for="nota2">Nota 2:</label>
+                <input type="number" name="nota2">
+            </div>
+            <div class="forms">
+                <label for="nota3">Nota 3:</label>
+                <input type="number" name="nota3">
+            </div>
+            <div class="botao">
+                <button type="submit" class="button">Salvar nota</button> 
+            </div>
+        </form>
+            <div class="respota">
+                <p>Aluno: <%= aluno %> </p>
+                <p>Nota 1: <%= nota1 %> </p>
+                <p>Nota 2: <%= nota2 %> </p>
+                <p>Nota 3: <%= nota3 %> </p>
+            </div>
+
+        <div class="texto">
+            <h3>Média:</h3>
+        </div>
+        <form>
+            <div class="forms">
+                <label for="aluno_media">Aluno:</label>
+                <input type="text" name="aluno_media">
+            </div>
+            <div class="botao">
+                <button type="submit" class="button">Média</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
