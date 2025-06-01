@@ -27,12 +27,4 @@ label{
     justify-content: center;
     margin-bottom: 40px;
 }
-.resposta{
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-.componentes{
-    display: flex;
-    justify-content: center;
-}
+
