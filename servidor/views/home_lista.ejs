@@ -36,18 +36,21 @@
             </div>
         </form>
             <div class="resposta">
+            <% usuarios.forEach(function(usuario) { %>
                 <div class="componentes">
-                    <h2>Nome: <%= nome %> </h2>
+                    <h2>Nome: <%= usuario.nome %> </h2>
                 </div>
                 <div class="componentes">
-                    <p>Nota 1: <%= nota1 %> </p>
+                    <p>Nota 1: <%= usuario.nota1 %> </p>
                 </div>
                 <div class="componentes">
-                    <p>Nota 2: <%= nota2 %> </p>
+                    <p>Nota 2: <%= usuario.nota2 %> </p>
                 </div>
                 <div class="componentes">
-                    <p>Nota 3: <%= nota3 %> </p>
+                    <p>Nota 3: <%= usuario.nota3 %> </p>
                 </div>
+                <hr>
+                <% }); %>
             </div>
 
         <div class="texto">
