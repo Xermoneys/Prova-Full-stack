@@ -55,4 +55,21 @@ app.get('/lista', function (requisicao, resposta) {
     });
 });
 
+app.get('/media', function (req, res) {
+    const nomeAluno = req.query.aluno_media;
+
+    usuarios.findOne({ nome: nomeAluno }, (err, usuario) => {
+        if (err || !usuario) {
+            res.render(`resposta_media_erro`, {nome : nomeAluno});
+        } else {
+            const nota1 = parseFloat(usuario.nota1);
+            const nota2 = parseFloat(usuario.nota2);
+            const nota3 = parseFloat(usuario.nota3);
+
+            const media = ((nota1 + nota2 + nota3) / 3).toFixed(2);
+
+            res.render('resposta_media_sucesso', { nome: nomeAluno, media: media }); // ✅ Usando EJS
+        }
+    });
+});
 });

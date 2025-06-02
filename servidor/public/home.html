@@ -17,19 +17,19 @@
         <form method = "post" action="/cadastro" class="form-container">
             <div class="forms">
                 <label for="Aluno">Aluno:</label>
-                <input type="text" name="nome">
+                <input type="text" name="nome" required>
             </div>
             <div class="forms">
                 <label for="nota1">Nota 1:</label>
-                <input type="number" name="nota1">
+                <input type="number" name="nota1" required>
             </div>
             <div class="forms">
                 <label for="nota2">Nota 2:</label>
-                <input type="number" name="nota2">
+                <input type="number" name="nota2" required>
             </div>
             <div class="forms">
                 <label for="nota3">Nota 3:</label>
-                <input type="number" name="nota3">
+                <input type="number" name="nota3" required>
             </div>
             <div class="botao">
                 <button type="submit" class="button">Salvar nota</button> 
@@ -38,7 +38,7 @@
         <div class="texto">
             <h3>Média:</h3>
         </div>
-        <form>
+        <form method="get" action="/media">
             <div class="forms">
                 <label for="aluno_media">Aluno:</label>
                 <input type="text" name="aluno_media">
